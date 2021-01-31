@@ -50,6 +50,9 @@ from dash.dependencies import Input, Output
 # Build App
 #app = JupyterDash(__name__)
 app = Dash(__name__)
+
+server = app.server 
+
 app.layout = html.Div([
     html.H1("Interpreting Test Results"),
     dcc.Graph(id='graph'),
