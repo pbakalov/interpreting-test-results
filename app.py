@@ -87,4 +87,5 @@ def update_figure(sense, spec):
     return leaf_plot(sense, spec)
 
 # Run app and display result inline in the notebook
-app.run_server()
+if __name__ == "__main__":
+    app.run_server(debug =True)
